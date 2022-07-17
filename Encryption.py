@@ -51,7 +51,7 @@ def Encrypt(uncoded):
         indexes[i] = hash(indexes[i])
         i += 1
     f = open(
-        "/Users/josephcolangelo/Desktop/Coding/Projects/Encryption/passwords.txt", "a")
+        "passwords.txt", "a")
     for x in indexes:
         f.write(str(x))
         f.write(markToken)
@@ -62,7 +62,7 @@ def Encrypt(uncoded):
 
 def Decrypt():
     letters = []
-    with open("/Users/josephcolangelo/Desktop/Coding/Projects/Encryption/passwords.txt") as f:
+    with open("passwords.txt") as f:
         data = f.read()
         j = 0
         marker = 0
